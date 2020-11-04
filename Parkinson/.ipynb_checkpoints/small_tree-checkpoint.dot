@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="motor_UPDRS <= 23.4\nmse = 118.6\nsamples = 2785\nvalue = 28.9"] ;
+1 [label="motor_UPDRS <= 13.2\nmse = 37.7\nsamples = 1604\nvalue = 21.4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="motor_UPDRS <= 7.9\nmse = 21.2\nsamples = 550\nvalue = 14.9"] ;
+1 -> 2 ;
+3 [label="mse = 3.4\nsamples = 118\nvalue = 8.4"] ;
+2 -> 3 ;
+4 [label="mse = 10.7\nsamples = 432\nvalue = 16.8"] ;
+2 -> 4 ;
+5 [label="motor_UPDRS <= 19.2\nmse = 12.3\nsamples = 1054\nvalue = 24.8"] ;
+1 -> 5 ;
+6 [label="mse = 8.0\nsamples = 714\nvalue = 23.3"] ;
+5 -> 6 ;
+7 [label="mse = 6.0\nsamples = 340\nvalue = 28.1"] ;
+5 -> 7 ;
+8 [label="motor_UPDRS <= 31.8\nmse = 49.4\nsamples = 1181\nvalue = 39.0"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="motor_UPDRS <= 26.0\nmse = 24.4\nsamples = 886\nvalue = 36.1"] ;
+8 -> 9 ;
+10 [label="mse = 14.8\nsamples = 312\nvalue = 32.7"] ;
+9 -> 10 ;
+11 [label="mse = 19.7\nsamples = 574\nvalue = 38.0"] ;
+9 -> 11 ;
+12 [label="age <= 69.5\nmse = 25.1\nsamples = 295\nvalue = 47.5"] ;
+8 -> 12 ;
+13 [label="mse = 4.2\nsamples = 128\nvalue = 44.0"] ;
+12 -> 13 ;
+14 [label="mse = 25.2\nsamples = 167\nvalue = 50.0"] ;
+12 -> 14 ;
+}
